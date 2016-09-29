@@ -3,4 +3,28 @@
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="prompt">Please Input a Temperature</string>
+    <string name="celsius">Celcius</string>
+    <string name="fahrenheit">Fahrenheit</string>
+    <string name="kelvin">Kelvin</string>
+    <string name="rankine">Rankine</string>
+    <string name="buttonText">Convert</string>
+    <string name="radio_label_to">To</string>
+    <string name="radio_label_from">From</string>
+
+    <string name="celsius_to_fahrenheit">[°F] = [°C] × 9⁄5 + 32</string>
+    <string name="celsius_to_kelvin">[K] = [°C] + 273.15</string>
+    <string name="celsius_to_rankine">[°R] = ([°C] + 273.15) × 9⁄5</string>
+    <string name="fahrenheit_to_celsius">[°C] = ([°F] − 32) × 5⁄9</string>
+    <string name="fahrenheit_to_kelvin">[K] = ([°F] + 459.67) × 5⁄9</string>
+    <string name="fahrenheit_to_rankine">[°R] = [°F] + 459.67</string>
+    <string name="kelvin_to_celsius">[°C] = [K] − 273.15</string>
+    <string name="kelvin_to_fahrenheit">[°F] = [K] × 9⁄5 − 459.67</string>
+    <string name="kelvin_to_rankine">[°R] = [K] × 9⁄5</string>
+    <string name="rankine_to_fahrenheit">[°F] = [°R] − 459.67</string>
+    <string name="rankine_to_celsius">[°C] = ([°R] − 491.67) × 5⁄9</string>
+    <string name="rankine_to_kelvin">[K] = [°R] × 5⁄9</string>
+
+    <string name="same_unit_toast">Same Units</string>
+    <string name="empty_edit_toast">No Starting Temp</string>
 </resources>

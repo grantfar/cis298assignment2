@@ -1,12 +1,16 @@
 <LinearLayout android:layout_height="match_parent"
     android:layout_width="match_parent"
-    android:orientation="vertical"
+    android:orientation="horizontal"
     xmlns:android="http://schemas.android.com/apk/res/android">
-
-<TextView
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="@string/prompt"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="2">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/prompt"/>
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -14,6 +18,27 @@
         android:width="200dp"
         android:inputType="numberDecimal"
         android:id="@+id/tempInputEditText"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="30dp"
+        android:textSize="10pt"
+        android:id="@+id/textViewOutput"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/textViewFormulaOutput"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:layout_gravity="right"
+        android:paddingRight="20dp"
+        android:layout_weight="1">
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
@@ -22,16 +47,17 @@
             android:layout_height="wrap_content"
             android:id="@+id/inputRadioButtons"
             android:layout_gravity="left"
-            android:padding="50dp">
+            android:paddingTop="20dp"
+            android:paddingRight="20dp">
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/radio_label_to"/>
-           <RadioButton
-               android:layout_width="wrap_content"
-               android:layout_height="wrap_content"
-               android:text="@string/celsius"
-               android:id="@+id/inputCelsius"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/celsius"
+                android:id="@+id/inputCelsius"/>
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -53,8 +79,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/outputRadioButtons"
-            android:paddingTop="50dp"
-            android:paddingBottom="50dp">
+            android:paddingTop="20dp">
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -83,22 +108,14 @@
     </LinearLayout>
 
     <Button
+        android:layout_marginTop="65dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/buttonText"
-        android:id="@+id/convertButton"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="15dp"
-        android:textSize="10pt"
-        android:id="@+id/textViewOutput"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:id="@+id/textViewFormulaOutput"/>
+        android:layout_gravity="bottom|right"
+        android:id="@+id/convertButton" />
+    </LinearLayout>
+
 
 </LinearLayout>
 
