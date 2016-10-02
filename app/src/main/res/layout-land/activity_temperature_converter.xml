@@ -16,7 +16,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="left"
         android:width="200dp"
-        android:inputType="numberDecimal"
+        android:inputType="numberDecimal|numberSigned"
         android:id="@+id/tempInputEditText"/>
     <TextView
         android:layout_width="wrap_content"
